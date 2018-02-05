@@ -1,0 +1,102 @@
+  <!-- This is an HTML comment. Comments allow you to communicate with other programmers using
+  text that will be ignored by the computer! -->
+  <!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+  <html lang="en">
+  <head> <!-- The head tag includes important information about the page -->
+    <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+    This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+    You should include this line in the head of all of your webpages. -->
+    <title>Nnubia's Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+  </head>
+  <body> <!-- The body tag is where the "flesh" of your HTML goes -->
+    <!-- Write your HTML here -->
+    <h1>UNIT II</h1> <!--This gives a hint of where the note written below came from -->
+    <div class="description">
+      <h2><u>Table of Contents</u></h2>
+      <ol>
+        <li><a href="#Part-1" style="color: red">Part 1: HTML and CSS</a>
+        <ul>
+          <li><a href="#Part-1-1" style="color: red">Part 1.1: How do I include CSS Styling in my Webpage</a></li>
+          <li><a href="#Part-1-2" style="color: red">Part 1.2: Box Sizing and Position Summary</a></li>
+        </ul>
+        </li>
+        <li><a href="#Part-2" style="color: red">Part 2: CODE, TEST, REFINE</a></li>
+      </ol>
+    </div>
+    <div class="description">
+    	<h2 id="Part-1">HTML and CSS</h2> <!--A brief summary of what HTML and CSS is (and not the general defintion or breakdown) -->
+    	<p>
+    		<b>HTML</b> is the language of the web (Syntax + Rules). The browser turns HTML tag into elements in tree (thanks to <b>DOM</b>-Document Object Model). HTML is structure of web. 
+    	</p>
+      <div class="image"><img src="https://lh4.ggpht.com/HhgTF4192zojydoQpvvMNEbD5M-fEfEEVI3kZNsy1YVelT2D5VjrYzX7lUQIUWu_C2kgPgLzUvfdCo-bJQ=s0#w=598&h=384" width="400"  alt="This a screenshot of Tree-like Structure">
+      </div>
+      <p>
+        <b>CSS</b> is also the language of the web (Syntax + Rules). Syntax under CSS is made up of color, size, font, background borders, position etc. CSS is the code written to control the style of HTML elements. CSS number 1 Rule is to avoid repetition.<br>
+        Javascript is simply the interactive module.<br>
+        To access the HTML tag and CSS on a browser: For Chrome, simply click on the three dots >> more tools >> Developer tools; For Mozilla, right click on the webpage and choose Inspect Element.<br>
+        For more information on Easy HTML Editing with Chrome's Developer Tools, just watch the <a href="https://www.youtube.com/watch?v=aZpYkA1VghA" style="color: red">IPND Office Hours</a>
+      </p>
+    
+      <h3 id="Part-1.1">How Do I Include CSS Styling In My WebPage</h3> <!-- This subheading highlights on the introduction of CSS styling -->
+      <p>
+         There are <b>three (3)</b> ways you can do this.<br>
+         <h4>Method 1:</h4> Write CSS in the &lt;head&gt; of your HTML<br>
+            If you want to quickly style an HTML document, you can do the following:<br>
+            <ul>
+               <li>
+                1. At the top of your HTML document, add a &lt;head&gt; element.<br>
+                2. Inside the &lt;head&gt; element, add a &lt;style&gt; element.<br>
+                3. Write your CSS in the &lt;style&gt; element and then put the HTML for the rest of your page below.<br>
+              </li>
+            </ul>
+      <p>
+      <h4>Method 2:</h4> Link your HTML to a separate CSS file.<br>
+          This adds another step, but lets you stay more organized when working on larger projects. To do this:<br>
+          <ul>
+            <li>
+              1. Write all of your structural HTML in one file.<br>
+              2. In a separate file, put all of your CSS code.<br>
+              3. Add a &lt;head&gt; element to the top of your HTML.<br>
+              4. Add a &lt;link&gt; tag inside the &lt;head&gt; element, since &lt;link&gt; is a "void tag" you don't need to add a closing &lt;/link&gt;<br>
+              5. Add the following attributes to your &lt;link&gt;:<br>
+                a) rel="stylesheet"<br>
+                b) href="main.css"<br>
+            </li>
+          </ul>
+     <p>
+    	<h4>Method 3:</h4> Write your style inline with your HTML<br>
+    	This is generally a very bad idea because it leads to lot of repeated code. But you may see code that uses this method so it's good to be familiar with it.<br> With this method, you modify the style attributes of every individual HTML element.<br>
+    <h3 id="Part-1-2">Box Sizing and Position Summary</h3>
+      <p>
+        <h4>Box Sizing:</h4> There are <b>four (4)</b> main points that addresses box sizing.<br>
+          <ul>
+            <li>
+              1. HTML elements are boxes and each box has four (4) components.<br>
+              2. It is often hard to get the size of a box.<br>
+              3. There are two (2) techniques you can use to help deal with sizing issues:<br>
+                a) Set sizes in terms of percentage (%) rather than pixels (px).<br>
+                b) Set the box-sizing attribute to border-box for every element.<br>
+              4. Different browsers work slightly differently.<br>
+            </li>
+          </ul>
+        <h4>Box Positioning:</h4>
+          <ul>
+            <li>
+              1. Divs are <b>block</b> elements (as opposed to<b>inline</b>), so by default they take up the entire width of a page.<br>
+              2. Adding the rule <em>display:flex;</em> to the appropriate CSS will override this behaviour and let divs appear next to each other.<br>
+            </li>
+          </ul>
+    <h2 id="Part-2">CODE, TEST, REFINE</h2> <!-- Keypoints for coding -->
+      <p>
+        <ul>
+          <li>
+            1. Look for natural boxes.<br>
+            2. Look for repeated styles and semantic elements.<br>
+            3. Write your HTML.<br>
+            4. Apply styles.<br>
+            5. Fix things.
+          </li>
+        </ul>
+    </div>      
+</body>

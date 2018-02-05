@@ -1,0 +1,46 @@
+/* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+* {
+   outline: 1px white !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 700px;
+    font-family: Arial serif Georgia times;
+}
+
+h1 {
+	text-align: center;
+	text-decoration-color: blue;
+	color: blue;
+}
+
+h2 {
+	text-align: center;
+	color: #33bebe
+
+}
+li {
+	list-style-type: none; /* This removes the bulletpoint. */
+}
+
+.summary {
+	font-size: 20px;
+	line-height: 40px; /* Lines of text should be within a this px to in order to be readable with any device */
+}
+
+.image {
+	max-width: 400px;
+}
+
+.description {
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px auto;
+	color: white;
+	background: #294860;
+}
